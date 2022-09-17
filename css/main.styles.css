@@ -23,7 +23,7 @@ li {
 
 header,
 .navbar {
-    background-color: #2E9AFE;
+    background-color: #353D41;
 }
 
 #nav-container {
@@ -58,16 +58,18 @@ header,
 
 .title2 {
     color: #0101DF;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-style: italic;
+    text-decoration: overline;
 }
 
 .title1 {
-    color: #FFF;
-    font-size: 1rem;
+    color: #65DAF9;
+    font-size: 2rem;
     font-family: 'Roboto';
     font-weight: bold;
     margin-left: 5px;
+    text-decoration: overline;
 }
 
 
@@ -79,7 +81,7 @@ header,
 
 #mainSlider .carousel-inner,
 #mainSlider .carousel-item {
-    height: 95vh;
+    height: 90vh;
 }
 
 #mainSlider .carousel-caption {
@@ -195,15 +197,29 @@ header,
 }
 
 
+/* Dados */
+
+.circle-box div {
+    padding: 0 40px;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#data-area p {
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+
 /* Time */
 
 .card-body {
     text-align: center;
-}
-
-.card-title {
-    font-size: 15px;
-    font-weight: bold;
 }
 
 
@@ -559,14 +575,14 @@ header,
     #company-img {
         display: none;
     }
-    /* filtro */
+    /* filter */
     #portfolio-area .filter-btn {
         margin-bottom: 20px;
     }
     .project-box {
         width: 50%;
     }
-    /* novidades */
+    /* news */
     #news-area .main-title {
         font-size: 24px;
     }
@@ -586,7 +602,7 @@ header,
         margin: 0;
         width: 50%;
     }
-    /* contacto */
+    /* contact */
     .contact-box {
         border: none;
         margin-bottom: 0;

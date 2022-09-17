@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaxiSoft, Software and Tecnology</title>
+    <title>Maxisotf, software and Tecnology</title>
     <!-- Fonte -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <!-- Estilos -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Scripts  -->
+    <link rel="stylesheet" href="css/main.styles.css">
+    <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" id="home-menu" href="#">Home</a>
-                        <a class="nav-item nav-link" id="about-menu" href="#">A empresa</a>
+                        <a class="nav-item nav-link" id="about-menu" href="#">A agência</a>
                         <a class="nav-item nav-link" id="services-menu" href="#">Serviços</a>
                         <a class="nav-item nav-link" id="team-menu" href="#">Time</a>
                         <a class="nav-item nav-link" id="portfolio-menu" href="#">Projetos</a>
@@ -48,7 +48,7 @@
     </header>
     <main>
         <div class="container-fluid">
-            <!--slider-->
+            <!-- slider -->
             <div id="mainSlider" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
@@ -57,24 +57,27 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/slide5.png" class="d-block w-100" alt="Projetos de e-commerce">
+                        <img src="img/banner1.png" class="d-block w-100" alt="Projetos de e-commerce">
+
+                        <!-- tirar classe d-none -->
+
                         <div class="carousel-caption d-md-block">
                             <h2>Quer criar um e-commerce?</h2>
                             <p>Conte conosco, temos mais de 10 lojas no portf&oacute;lio.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/slide6.png" class="d-block w-100" alt="Engenharia de software">
+                        <img src="img/banner2.png" class="d-block w-100" alt="Engenharia de software">
                         <div class="carousel-caption d-md-block">
                             <h2>Est&aacute; querendo tirar o projeto do papel?</h2>
                             <p>Nossa equipe de engenharia de software est&aacute; pronta para lhe atender.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/slide5.png" class="d-block w-100" alt="Manutenção em software">
+                        <img src="img/banner3.png" class="d-block w-100" alt="Manutenção em software">
                         <div class="carousel-caption d-md-block">
                             <h2>Est&aacute; buscando manuten&ccedil;&atilde;o no seu software?</h2>
-                            <p>MaxiSoft conta com engenheiros altamente qualificados para resolver seu problema.</p>
+                            <p><span class="title1">Maxi</span><span class="title2">Soft</span> conta com engenheiros altamente qualificados para resolver seu problema.</p>
                         </div>
                     </div>
                 </div>
@@ -92,10 +95,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h3 class="main-title">MaxiSoft, Software and Tecnology</h3>
+                            <h3 class="main-title"><span class="title1">Maxi</span><span class="title2">Soft</span>, software and Tecnology</h3>
                         </div>
                         <div class="col-md-6">
-                            <img class="img-fluid" src="img/ev1.jpg" alt="MaxiSoft">
+                            <img class="img-fluid" src="img/empresa1.jpg" alt="Maxisotf, software and Tecnology">
                         </div>
                         <div class="col-md-6">
                             <h3 class="about-title">Uma empresa refer&ecirc;nciada em software</h3>
@@ -105,7 +108,6 @@
                             <p>Nosso time de teste est&aacute; sempre realizando os testes para entregar um produto com mais qualidade.</p>
                             <p>Veja outras qualificados:</p>
                             <ul id="about-list">
-                                <li><i class="fas fa-check"></i> Utiliza&ccedil;&atilde;o de Machine Learning / AI</li>
                                 <li><i class="fas fa-check"></i> Layout responsivo para todos os dispositivos</li>
                                 <li><i class="fas fa-check"></i> Integra&ccedil;&atilde;o com diversos sistemas do mercado</li>
                                 <li><i class="fas fa-check"></i> Sistema independente</li>
@@ -174,7 +176,7 @@
                         </div>
                         <div class="col-md-3 col-xs-6 circle-box">
                             <div id="circleD"></div>
-                            <p>Cafézinhos</p>
+                            <p>Caf&eacute;zinhos</p>
                         </div>
                     </div>
                 </div>
@@ -188,36 +190,36 @@
                         </div>
                         <div class="col-md-3">
                             <div class="card">
-                                <img src="img/foto1.jpg" class="card-img-top" alt="Amikel Maxi C">
+                                <img src="img/foto1.jpg" class="card-img-top" alt="maxisotf user perfil">
                                 <div class="card-body">
-                                    <h5 class="card-title">Amikel Maxi Celestin Benoit</h5>
-                                    <p class="card-text">Desenvolvedor</p>
+                                    <h5 class="card-title">Amikel Maxi C</h5>
+                                    <p class="card-text">Software Developer</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card">
-                                <img src="img/foto1.jpg" class="card-img-top" alt="Myrlande Louissaint Maxi">
+                                <img src="img/foto1.jpg" class="card-img-top" alt="maxisotf user perfil">
                                 <div class="card-body">
                                     <h5 class="card-title">Myrlande Louissaint Maxi</h5>
-                                    <p class="card-text">SEO</p>
+                                    <p class="card-text">SEO Consultant</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card">
-                                <img src="img/foto1.jpg" class="card-img-top" alt="Victor Hector de Oliveira">
+                                <img src="img/foto1.jpg" class="card-img-top" alt="maxisotf user perfil">
                                 <div class="card-body">
-                                    <h5 class="card-title">Victor Hector de Oliveira</h5>
-                                    <p class="card-text">Teste</p>
+                                    <h5 class="card-title">Amikel Maxi Celestin</h5>
+                                    <p class="card-text">Project Manager</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card">
-                                <img src="img/foto1.jpg" class="card-img-top" alt="Karen Jennifer Pierre">
+                                <img src="img/foto1.jpg" class="card-img-top" alt="maxisotf user perfil">
                                 <div class="card-body">
-                                    <h5 class="card-title">Karen Jennifer Pierre</h5>
+                                    <h5 class="card-title">J&eacute;ssica Louis</h5>
                                     <p class="card-text">UX/UI Designer</p>
                                 </div>
                             </div>
@@ -225,7 +227,21 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Trabalhe conosco -->
+            <div id="apply-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 apply-box" id="company-img"></div>
+                        <div class="col-md-6 apply-box" id="pattern-img">
+                            <h4>Vem com a gente!!</h4>
+                            <p>Temos v&aacute;rias posi&ccedil;&otilde;es abertas, entre elas: Software Engineer, UI/UX Designer, Project Manager e mais.</p>
+                            <p>Clique no bot&atilde;o abaixo e confira os benef&iacute;cios e as posi&ccedil;&otilde;es em aberto.</p>
+                            <p>Aqui voc&ecirc; tem a chance de trabalhar com as melhores tecnologias e os profissionais mais capacitados.</p>
+                            <a href="#" class="main-btn" id="apply-btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Portfólio -->
             <div id="portfolio-area">
                 <div class="container">
@@ -238,25 +254,24 @@
                             <button class="main-btn filter-btn" id="dev-btn">Desenvolvimento</button>
                             <button class="main-btn filter-btn" id="dsg-btn">Design</button>
                             <button class="main-btn filter-btn" id="seo-btn">SEO</button>
-                            <button class="main-btn filter-btn" id="amb-btn">Ambiental</button>
                         </div>
                         <div class="col-md-4 project-box dev">
-                            <img src="img/projeto1.jpg" class="img-fluid" alt="">
+                            <img src="img/proj1.jpg" class="img-fluid" alt="maxisotf project foto">
                         </div>
                         <div class="col-md-4 project-box dsg">
-                            <img src="img/projeto2.png" class="img-fluid" alt="">
+                            <img src="img/proj2.jpg" class="img-fluid" alt="maxisotf project foto">
                         </div>
                         <div class="col-md-4 project-box seo">
-                            <img src="img/projeto3.jpg" class="img-fluid" alt="">
+                            <img src="img/proj3.jpg" class="img-fluid" alt="maxisotf project foto">
                         </div>
                         <div class="col-md-4 project-box dev">
-                            <img src="img/projeto4.jpg" class="img-fluid" alt="">
+                            <img src="img/proj4.jpg" class="img-fluid" alt="maxisotf project foto">
                         </div>
                         <div class="col-md-4 project-box dsg">
-                            <img src="img/proj3.jpg" class="img-fluid" alt="">
+                            <img src="img/proj5.jpg" class="img-fluid" alt="maxisotf project foto">
                         </div>
                         <div class="col-md-4 project-box seo">
-                            <img src="img/ambiente.jpg" class="img-fluid" alt="">
+                            <img src="img/proj6.jpg" class="img-fluid" alt="maxisotf project foto">
                         </div>
                     </div>
                 </div>
@@ -265,7 +280,7 @@
             <div id="news-area">
                 <div class="container">
                     <div class="col-md-12">
-                        <h3 class="main-title">Noticias e ofertas</h3>
+                        <h3 class="main-title">noticias e ofertas</h3>
                     </div>
                     <p>Assine nossa lista de e-mails, e receba nossos conte&uacute;dos sobre desenvolvimento de software</p>
                     <form action="">
@@ -285,7 +300,7 @@
             </div>
         </div>
     </main>
-    <!-- Rodape -->
+    <!-- Rodapé -->
     <footer>
         <div id="contact-area">
             <div class="container">
@@ -325,6 +340,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p>Desenvolvido por <a href="http://www.maxsyst.epizy.com" target="_blank"> Maxi Amikel , Mai </a> &copy; 2020</p>
+                        <p><span class="title1">Maxi</span><span class="title2">Soft</span>, All rights reserve</p>
                     </div>
                 </div>
             </div>
